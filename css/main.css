@@ -70,14 +70,19 @@ body, html {
     width: 130px;
     height: 130px; }
 
-.hero__signup {
+.hero__signup, .hero__confirm {
   margin: 0 auto auto;
   color: #FEFEFE;
   width: 100%;
   padding: 1em; }
-  .hero__signup-content h3 {
+  .hero__signup-content h3, .hero__confirm-content h3 {
     font-weight: 400; }
-  .hero__signup-form p {
+  .hero__signup-content a, .hero__confirm-content a {
+    color: #FEFEFE;
+    transition: 0.25s ease; }
+    .hero__signup-content a:hover, .hero__confirm-content a:hover {
+      color: #e5e5e5; }
+  .hero__signup-form p, .hero__confirm-form p {
     margin: 0; }
 
 .signup__form {
@@ -87,7 +92,7 @@ body, html {
   .hero__wrapper {
     -ms-flex-flow: row nowrap;
         flex-flow: row nowrap; }
-  .hero__signup {
+  .hero__signup, .hero__confirm {
     margin: 0 auto;
     width: 60vh; }
   .hero__logo svg {
