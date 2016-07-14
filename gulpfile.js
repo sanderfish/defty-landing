@@ -49,12 +49,7 @@ gulp.task('browser-sync', ['sass', 'scripts', 'jekyll-build'], function() {
 /**
  * Deploy to github pages
 **/
-
-<<<<<<< HEAD
 gulp.task('deploy', function() {
-=======
-gulp.tast('deploy', function() {
->>>>>>> origin/gh-pages
   return gulp.src('_site/**/**/*')
   .pipe(ghPages());
 });
