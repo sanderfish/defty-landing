@@ -16,7 +16,7 @@
       height: 130px;
     }
   }
-  &__signup {
+  &__signup, &__confirm {
     margin: 0 auto auto;
     color: $secondary-color;
     width: 100%;
@@ -24,6 +24,13 @@
     &-content {
       h3 {
         font-weight: 400;
+      }
+      a {
+        color: $secondary-color;
+        transition: 0.25s ease;
+        &:hover {
+          color: darken($secondary-color, 10%);
+        }
       }
     }
     &-form {
@@ -43,7 +50,7 @@
     &__wrapper {
       flex-flow: row nowrap;
     }
-    &__signup {
+    &__signup, &__confirm {
       margin: 0 auto;
       width: 60vh;
     }
