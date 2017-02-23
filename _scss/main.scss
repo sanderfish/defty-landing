@@ -1,0 +1,15 @@
+// Settings
+
+@import "settings/color",
+        "settings/type";
+
+// Components
+
+@import "components/buttons",
+        "components/input",
+        "components/general",
+        "components/hero/hero";
+
+body, main {
+  background: $secondary-color;
+}

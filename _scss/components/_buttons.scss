@@ -1,0 +1,17 @@
+button {
+  font: 1rem $font-stack;
+  border: 0;
+  border-radius: 5px;
+  background-color: $primary-color;
+  cursor: pointer;
+  color: $text-white-color;
+  height: 100%;
+  width: auto;
+  padding: 0 1em;
+  outline: 0;
+  transition: 0.5s ease;
+  margin: 0.5em 0;
+  &:hover {
+    background-color: darken($primary-color, 5%);
+  }
+}
