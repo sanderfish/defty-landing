@@ -56,7 +56,7 @@ body, html {
 .hero__wrapper {
   width: 100%;
   height: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   background-color: #FEFEFE;
   display: -webkit-box;
   display: -webkit-flex;
@@ -66,10 +66,6 @@ body, html {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-flow: column nowrap;
@@ -81,29 +77,16 @@ body, html {
   -webkit-flex: 1 0 50%;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
-  width: 100%;
-  height: 100%;
-  padding: 1em 0;
-  background-color: #EA5F5F;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: column nowrap;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap; }
+  min-height: 20vh;
+  position: relative; }
+  .hero__left img {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: auto; }
 
 .hero__right {
+  z-index: 1;
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 50%;
       -ms-flex: 1 0 50%;
@@ -116,14 +99,6 @@ body, html {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-flow: column nowrap;
@@ -131,7 +106,7 @@ body, html {
           flex-flow: column nowrap; }
 
 .hero__logo {
-  margin: 0 auto; }
+  margin-right: auto; }
   .hero__logo svg {
     width: 130px;
     height: 130px; }
@@ -145,9 +120,12 @@ body, html {
   .hero__signup-content a, .hero__confirm-content a {
     color: #222222;
     -webkit-transition: 0.25s ease;
-    transition: 0.25s ease; }
+    transition: 0.25s ease;
+    font-weight: 600;
+    text-decoration: none; }
     .hero__signup-content a:hover, .hero__confirm-content a:hover {
-      color: #e5e5e5; }
+      text-decoration: underline;
+      color: #090909; }
   .hero__signup-form form, .hero__confirm-form form {
     margin-top: 1em;
     display: -webkit-box;
@@ -160,6 +138,7 @@ body, html {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     width: 100%;
+    max-width: 500px;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -169,13 +148,12 @@ body, html {
     -webkit-flex: 3 0 auto;
         -ms-flex: 3 0 auto;
             flex: 3 0 auto;
-    margin: 0.25em; }
+    margin-right: 0.5em; }
   .hero__signup-form button, .hero__confirm-form button {
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 auto;
         -ms-flex: 1 0 auto;
-            flex: 1 0 auto;
-    margin: 0.25em; }
+            flex: 1 0 auto; }
   .hero__signup-form p, .hero__confirm-form p {
     margin: 0; }
 
@@ -191,9 +169,12 @@ body, html {
             flex-flow: row nowrap; }
   .hero__left, .hero__right {
     min-height: 100vh; }
+  .hero__left img {
+    height: 100%;
+    width: auto; }
   .hero__signup, .hero__confirm {
     margin: 0 auto;
-    max-width: 80vh; }
+    padding: 5%; }
   .hero__logo svg {
     width: 250px;
     height: 250px; } }
